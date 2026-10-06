@@ -44,12 +44,12 @@ a:hover,a:focus-visible{border-color:var(--accent);outline:none}
 .wrap{max-width:var(--col);margin:0 auto}
 .label{font:400 12px/1 var(--mono);letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
 /* surveyor's scale */
-.scale{height:44px;margin-top:clamp(28px,6vw,64px);border-bottom:1px solid var(--rule);
+.scale{height:12px;margin-top:clamp(28px,6vw,64px);border-bottom:1px solid var(--rule);
   background:
-   repeating-linear-gradient(90deg,var(--rule) 0 1px,transparent 1px 10%) bottom/100% 14px no-repeat,
-   repeating-linear-gradient(90deg,#1a1d21 0 1px,transparent 1px 1%) bottom/100% 30px no-repeat}
-.plate{display:flex;justify-content:space-between;gap:16px;padding:18px 0 0}
-.plate img{width:22px;height:auto;vertical-align:-6px;margin-right:12px}
+   repeating-linear-gradient(90deg,#24272c 0 1px,transparent 1px 10%) bottom/100% 10px no-repeat,
+   repeating-linear-gradient(90deg,#16191c 0 1px,transparent 1px 2%) bottom/100% 5px no-repeat}
+.plate{display:flex;align-items:center;padding:22px 0 0}
+.plate img{display:block;height:48px;width:auto}
 header{padding-bottom:clamp(48px,9vw,112px)}
 h1{font:400 clamp(40px,7.2vw,84px)/1.04 var(--serif);letter-spacing:-.01em;max-width:13ch;margin-top:clamp(48px,9vw,104px)}
 .accent{display:block;width:120px;height:2px;background:var(--accent);margin:clamp(24px,3vw,36px) 0}
@@ -79,7 +79,7 @@ footer a{border:0}
   section{grid-template-columns:1fr;gap:18px}
   .proof{grid-template-columns:1fr}
   .proof figure{max-width:180px}
-  .plate .label:last-child{display:none}
+  .plate img{height:38px}
 }
 </style>
 </head>
@@ -88,8 +88,7 @@ footer a{border:0}
   <header>
     <div class="scale" aria-hidden="true"></div>
     <div class="plate">
-      <span class="label"><img src="/img/raven.png" alt="">BrightRaven</span>
-      <span class="label">Plate I</span>
+      <img src="/img/wordmark.png" width="196" height="48" alt="BrightRaven">
     </div>
     <h1>Helping humans understand AI, and AI understand humans.</h1>
     <span class="accent" aria-hidden="true"></span>
